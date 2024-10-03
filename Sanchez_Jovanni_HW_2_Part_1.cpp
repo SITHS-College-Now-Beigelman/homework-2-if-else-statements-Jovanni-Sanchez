@@ -70,51 +70,50 @@ int main()
 
     /* Below is the actual functions that determine the seasons */
     /* To determine if a day is in a certain season, it has to be
-    one of these: (The start date) or (Withn the range of months)
-    or (The end date) */
+    fall between these ranges: (Within the range of days) AND
+    (Withn the range of months). It must not exceed the start date
+    nor the end date. */
 
-    if ((givenMonth == 3 && givenDay >= 21) ||
-        (givenMonth >= 3 && givenMonth <= 6) ||
-        (givenMonth == 6 && givenDay <= 20))
+    if ((givenMonth >= 3 && givenMonth <= 5) &&
+            (givenDay >= 21 && givenDay <= 31) ||
+        (givenMonth >= 4 && givenMonth <= 6) &&
+            (givenDay >= 1 && givenDay <= 20))
     {
         // For a day to be in Spring, it must:
-        // Be March 21
+        // Be within March 21 through May 31
         // or
-        // Be within March through June
-        // or
-        // Be June 20
+        // Be within April 1 through June 20
         cout << "On " << givenMonth << "/"
              << givenDay << ", it is now Spring!";
     }
-    else if ((givenMonth == 6 && givenDay >= 21) ||
-             (givenMonth >= 6 && givenMonth <= 9) ||
-             (givenMonth == 9 && givenDay <= 22))
+    else if ((givenMonth >= 6 && givenMonth <= 8) &&
+                 (givenDay >= 21 && givenDay <= 31) ||
+             (givenMonth >= 7 && givenMonth <= 9) &&
+                 (givenDay >= 1 && givenDay <= 22))
     {
         // For a day to be in Summer, it must:
-        // Be June 21
+        // Be within June 21 through August 31
         // or
-        // Be within June through September
-        // or
-        // Be September 22
+        // Be within June 1 through September 22
         cout << "On " << givenMonth << "/"
              << givenDay << ", it is now Summer!";
     }
-    else if ((givenMonth == 9 && givenDay >= 23) ||
-             (givenMonth >= 9 && givenMonth <= 12) ||
-             (givenMonth == 12 && givenDay <= 21))
+    else if ((givenMonth >= 9 && givenMonth <= 11) &&
+                 (givenDay >= 23 && givenDay <= 31) ||
+             (givenMonth >= 10 && givenMonth <= 12) &&
+                 (givenDay >= 1 && givenDay <= 21))
     {
         // For a day to be in Fall, it must:
-        // Be September 23
+        // Be within September 23 through November 31
         // or
-        // Be within September through December
-        // or
-        // Be December 21
+        // Be within October 1 through December 21
         cout << "On " << givenMonth << "/"
              << givenDay << ", it is now Fall!";
     }
     else
     {
-        // If all else fails, its Winter
+        // If its neither Spring, Summer, or Fall, then
+        // it must be Winter.
         cout << "On " << givenMonth << "/"
              << givenDay << ", it is now Winter!";
     }
