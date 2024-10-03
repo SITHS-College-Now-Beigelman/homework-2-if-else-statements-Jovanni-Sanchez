@@ -29,7 +29,7 @@ int main()
     {
         cout << "Invalid Score. "
              << "Remember, you're scoring the projects "
-             << "between 0.0 and 10.0. "
+             << "between 0.0 and 10.0.\n"
              << "Enter a valid score: ";
         cin >> judgeOneScore;
     }
@@ -41,7 +41,7 @@ int main()
     {
         cout << "Invalid Score. "
              << "Remember, you're scoring the projects "
-             << "between 0.0 and 10.0. "
+             << "between 0.0 and 10.0.\n"
              << "Enter a valid score: ";
         cin >> judgeTwoScore;
     }
@@ -53,7 +53,7 @@ int main()
     {
         cout << "Invalid Score. "
              << "Remember, you're scoring the projects "
-             << "between 0.0 and 10.0. "
+             << "between 0.0 and 10.0.\n"
              << "Enter a valid score: ";
         cin >> judgeThreeScore;
     }
@@ -65,7 +65,7 @@ int main()
     {
         cout << "Invalid Score. "
              << "Remember, you're scoring the projects "
-             << "between 0.0 and 10.0. "
+             << "between 0.0 and 10.0.\n"
              << "Enter a valid score: ";
         cin >> judgeFourScore;
     }
@@ -77,7 +77,7 @@ int main()
     {
         cout << "Invalid Score. "
              << "Remember, you're scoring the projects "
-             << "between 0.0 and 10.0. "
+             << "between 0.0 and 10.0.\n"
              << "Enter a valid score: ";
         cin >> judgeFiveScore;
     }
@@ -89,7 +89,7 @@ int main()
     {
         cout << "Invalid Score. "
              << "Remember, you're scoring the projects "
-             << "between 0.0 and 10.0. "
+             << "between 0.0 and 10.0.\n"
              << "Enter a valid score: ";
         cin >> judgeSixScore;
     }

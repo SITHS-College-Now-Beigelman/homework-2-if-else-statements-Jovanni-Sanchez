@@ -73,9 +73,9 @@ int main()
     one of these: (The start date) or (Withn the range of months)
     or (The end date) */
 
-    if ((givenMonth == 3 && givenDay == 21) ||
+    if ((givenMonth == 3 && givenDay >= 21) ||
         (givenMonth >= 3 && givenMonth <= 6) ||
-        (givenMonth == 6 && givenDay == 20))
+        (givenMonth == 6 && givenDay <= 20))
     {
         // For a day to be in Spring, it must:
         // Be March 21
@@ -101,7 +101,7 @@ int main()
     }
     else if ((givenMonth == 9 && givenDay >= 23) ||
              (givenMonth >= 9 && givenMonth <= 12) ||
-             (givenMonth == 12 && givenDay >= 21))
+             (givenMonth == 12 && givenDay <= 21))
     {
         // For a day to be in Fall, it must:
         // Be September 23
