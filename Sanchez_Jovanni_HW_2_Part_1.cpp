@@ -79,10 +79,12 @@ int main()
         (givenMonth >= 4 && givenMonth <= 6) &&
             (givenDay >= 1 && givenDay <= 20))
     {
-        // For a day to be in Spring, it must:
-        // Be within March 21 through May 31
-        // or
-        // Be within April 1 through June 20
+        /*
+        For a day to be in Spring, it must:
+        - Be within March 21 through May 31
+        or
+        - Be within April 1 through June 20
+        */
         cout << "On " << givenMonth << "/"
              << givenDay << ", it is now Spring!";
     }
@@ -91,10 +93,12 @@ int main()
              (givenMonth >= 7 && givenMonth <= 9) &&
                  (givenDay >= 1 && givenDay <= 22))
     {
-        // For a day to be in Summer, it must:
-        // Be within June 21 through August 31
-        // or
-        // Be within June 1 through September 22
+        /*
+        For a day to be in Summer, it must:
+        - Be within June 21 through August 31
+        or
+        - Be within July 1 through September 22
+        */
         cout << "On " << givenMonth << "/"
              << givenDay << ", it is now Summer!";
     }
@@ -103,17 +107,19 @@ int main()
              (givenMonth >= 10 && givenMonth <= 12) &&
                  (givenDay >= 1 && givenDay <= 21))
     {
-        // For a day to be in Fall, it must:
-        // Be within September 23 through November 31
-        // or
-        // Be within October 1 through December 21
+        /*
+        For a day to be in Fall, it must:
+        - Be within September 23 through November 31
+        or
+        - Be within October 1 through December 21.
+        */
         cout << "On " << givenMonth << "/"
              << givenDay << ", it is now Fall!";
     }
     else
     {
-        // If its neither Spring, Summer, or Fall, then
-        // it must be Winter.
+        /* If its neither Spring, Summer, or Fall, then
+        it must be Winter. */
         cout << "On " << givenMonth << "/"
              << givenDay << ", it is now Winter!";
     }
