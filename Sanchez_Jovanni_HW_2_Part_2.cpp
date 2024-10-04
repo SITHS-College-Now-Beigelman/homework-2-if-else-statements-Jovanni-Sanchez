@@ -133,9 +133,9 @@ int main()
         highestScore = judgeScores[6];
     }
 
-    /* After the lowest and highest score are finally determined, we subtract them
-    from the total score and diving it by four in order to print out the final score
-    for the project. The final score of the project is average of the four remaining
+    /* After the lowest and highest score are finally determined, they are subtracted
+    from the total score and divided by four in order to print out the final score
+    for the project. The final score of the project is the average of the four remaining
     scores, excluding the lowest and highest score. */
 
     cout << "The Final score for this Hackathon project is: "
