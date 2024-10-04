@@ -14,7 +14,7 @@ int main()
     int givenMonth;
     int givenDay;
 
-    /* Here we get the user's Month and Day */
+    /* Here I get the user's Month and Day */
 
     cout << "Please enter a month numerically (1-12): ";
     cin >> givenMonth;
