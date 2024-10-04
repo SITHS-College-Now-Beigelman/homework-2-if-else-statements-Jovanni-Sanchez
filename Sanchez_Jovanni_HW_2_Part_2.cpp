@@ -31,9 +31,9 @@ int main()
 
     for (currentJudge = 1; currentJudge <= judgeScores.size(); currentJudge = currentJudge + 1)
     {
-        /* You may have noticed that we used judgeScores.size() as the limit for iterations
+        /* You may have noticed that I used judgeScores.size() as the limit for iterations
         instead of a int. judgeScores.size() returns the limit of things that are allowed in the
-        list. The reason we do this is if the number of judges changes, all we have to do is change
+        list. The reason I do this is if the number of judges changes, all I have to do is change
         the size of the list (<float, 6>) to whatever is needed and that will update all for loops to
         the brand new limit of judges needed.  */
 
@@ -61,14 +61,14 @@ int main()
     for (currentJudge = 1; currentJudge <= judgeScores.size(); currentJudge++)
     {
         /* The purpose of this loop is to iterate through all the scores stored within the list
-        after the first loop and add them together.'theTotalScore' value is zero, so we just add 0
-        to all the values to eventually get the sum. The sum of the scores is asigned to the variable
+        after the first loop and add them together.'theTotalScore' value is zero, so 0 is added to
+        all the values to eventually get the sum. The sum of the scores is asigned to the variable
         'theTotalScore'. */
 
         theTotalScore = theTotalScore + judgeScores[currentJudge];
     }
 
-    /* This 'if' statement is used to find out the lowest score. We start out with the 1st score and
+    /* This 'if' statement is used to find out the lowest score. I start out with the 1st score and
     the rest of the list. If the 1st score is not the lowest score, its ruled out. Possible scores are
     ruled out until the actual lowest score is found. Once found, it's assigned to the 'lowestScore'
     variable. */
